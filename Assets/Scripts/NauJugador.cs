@@ -17,9 +17,10 @@ public class NauJugador : MonoBehaviour
     void Update()
     {
         float direccioHorizontal = Input.GetAxisRaw("Horizontal");
+        float direccioVertical = Input.GetAxisRaw("Vertical");
         //Debug.Log(direccioHorizontal);
 
-        Vector2 direccioIndicada = new Vector2(direccioHorizontal, 0f);
+        Vector2 direccioIndicada = new Vector2(direccioHorizontal, direccioVertical);
         
         Vector2 novaPos = transform.position; //Ens retorna la posició actual de la nau.
 
