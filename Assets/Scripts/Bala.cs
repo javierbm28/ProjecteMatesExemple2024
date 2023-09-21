@@ -10,23 +10,35 @@ public class Bala : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         Vector2 novaPos = transform.position;
         novaPos.y += velocity * Time.deltaTime;
         transform.position = novaPos;
 
         float limitSuperior = Camera.main.orthographicSize;
 
-        if (novaPos.y >= limitSuperior) {
+        if (novaPos.y >= limitSuperior)
+        {
 
             Destroy(gameObject);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D ObjecteTocat)
+    {
+
+        if (ObjecteTocat.tag == "Numero" || ObjecteTocat.tag == "Operacio")
+        {
+
+            Destroy(gameObject);
+
+        }
     }
 }

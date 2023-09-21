@@ -24,6 +24,16 @@ public class NauJugador : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D ObjecteTocat)
+    {
+        /*Cuan la nau toqui algun objecte, automaoticament se llamara este metodo.
+         El valor de Objetotocado, sera el objeto que hemos tocado */
+        if (ObjecteTocat.tag == "Numero") { 
+            
+            Destroy(gameObject);
+
+        }
+    }   
     private void MovimentNau()
     {
 
