@@ -7,6 +7,7 @@ public class NauJugador : MonoBehaviour
 
     //[SerializeField] private float _velNau;
     public float _velNau;
+    public GameObject _PrefabExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +29,12 @@ public class NauJugador : MonoBehaviour
     {
         /*Cuan la nau toqui algun objecte, automaoticament se llamara este metodo.
          El valor de Objetotocado, sera el objeto que hemos tocado */
-        if (ObjecteTocat.tag == "Numero") { 
-            
+        if (ObjecteTocat.tag == "Numero") {
+
+            GameObject explosion = Instantiate(_PrefabExplosion);
+            explosion.transform.position = transform.position;
             Destroy(gameObject);
+
 
         }
     }   

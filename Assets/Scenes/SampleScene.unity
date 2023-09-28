@@ -305,88 +305,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1953830866
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959545450094941186, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5909999445312523754, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      propertyPath: m_Name
-      value: Suma
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5909999445312523754, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1953830868}
-  m_SourcePrefab: {fileID: 100100000, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
---- !u!1 &1953830867 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5909999445312523754, guid: 5a8c2b6557416804fb41014764004b23, type: 3}
-  m_PrefabInstance: {fileID: 1953830866}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1953830868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953830867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff48b4745e86bc42b14874a50604384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _SpriteOperacions:
-  - {fileID: 21300000, guid: 1c063883a6434564e9b192ebcccbdb27, type: 3}
-  - {fileID: 21300000, guid: bcc653877a01bf74d81c2af551b51c45, type: 3}
-  - {fileID: 21300000, guid: b418a023a838c1a448c130a5c4045842, type: 3}
-  - {fileID: 21300000, guid: bc0995a6ac444ce45bf3e7ffb6aa4bcf, type: 3}
 --- !u!1 &2127843178
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velNau: 0
+  _PrefabExplosion: {fileID: 9016017090338547127, guid: 5248fa6f09459264eb9654e29ec42dec, type: 3}
 --- !u!50 &2127843182
 Rigidbody2D:
   serializedVersion: 4
@@ -567,4 +486,3 @@ SceneRoots:
   - {fileID: 2127843180}
   - {fileID: 1533060578}
   - {fileID: 1569667315}
-  - {fileID: 1953830866}
